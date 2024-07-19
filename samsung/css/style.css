@@ -1,0 +1,238 @@
+:root {
+    --main-color:#315a65;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: work-sans, sans-serif;
+}
+
+/*start global rules  */
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
+/* medium */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* large */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/*end global rules  */
+
+/* start header  */
+header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #777777;
+}
+
+header .logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header .logo h1 {
+    font-size: 60px;
+    color: var(--main-color);
+    font-weight: 800;
+}
+header .logo img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+@media (max-width:991px) {
+    header .logo h1 {
+        font-size: 45px;
+    }
+    header .logo img {
+        width: 200px;
+    }
+}
+@media (max-width:767px) {
+    header .logo h1 {
+        font-size: 30px;
+    }
+    header .logo img {
+        width: 150px;
+    }
+}
+/* end header  */
+
+/* start features  */
+.features {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 20px;
+    text-align: center;
+}
+.features .container .card {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width:767px) {
+    .features .container .card {
+        width: 250px;
+    }     
+    
+}
+.features .container .card img {
+    width: 100%;
+    border: var(--main-color) solid 3px;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.features .container .card img:hover {
+    transform: scale(1.07);
+}
+
+.features .container .card .text {
+    padding: 20px;
+}
+.features .container .card .text h3 {
+    color: var(--main-color);
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 800;
+}
+.features .container .card .text p {
+    line-height: 1.6;
+    font-size: 18px;
+    color: #777777;
+    font-weight: 500;
+}
+/* end features  */
+hr {
+    width: 60%;
+    border: 2px solid var(--main-color);
+    margin:0 auto ;
+}
+
+/* start table  */
+.container h4 {
+    font-size: 40px;
+    text-align: center;
+    margin: 30px auto;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+table{
+    width: 100%;   
+}
+table thead th {
+    padding: 20px;
+    background-color:var(--main-color);
+    font-size: 30px;
+    color: aliceblue;
+}
+@media (max-width:767px) {
+    .container h4{
+        font-size: 30px;
+    }
+    table thead th {
+        font-size: 16px;
+    }
+}
+table tbody td {
+    padding: 20px;
+    background-color: #777777;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 550;
+}
+@media (max-width:767px) {
+    table tbody td {
+        padding: 15px;
+        font-size: 15px;
+    }
+}
+
+table a {
+    text-decoration: none;
+    background-color: var(--main-color);
+    padding:10px 20px ;
+    border-radius: 20px ;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+@media (max-width:767px) {
+    table a {
+        font-size: 10px;
+        padding:10px;
+        font-weight: 300;
+    }
+}
+table tbody img {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+}
+@media (max-width:767px) {
+    table tbody img {
+        width: 50px;
+        height: 50px;
+    }
+}
+tfoot td {
+    background-color: var(--main-color);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 20px;
+}
+@media (max-width:767px) {
+    tfoot td {
+        font-size: 20px;
+        padding: 20px;
+    }
+}
+/* end table  */
+
+/* start footer  */
+.footer {
+    background-color: #777777;
+    margin-top: 150px;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+@media (max-width:767px) {
+    .footer {
+        font-size: 20px;
+    }
+}
+.footer a {
+    color:  var(--main-color);
+    text-decoration: none;
+}
+/* end footer  */
